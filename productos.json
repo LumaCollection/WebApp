@@ -220,14 +220,6 @@
       ],
       "price": "2,99 EUR",
       "sizes": ["Única"]
-    },
-    {
-      "name": "Pegatina de Camiseta",
-      "images": [
-        "imagenes/pegatinas/pegatina2-1.webp"
-      ],
-      "price": "2,99 EUR",
-      "sizes": ["Única"]
     }
   ],
 
