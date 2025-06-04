@@ -107,7 +107,11 @@ body {
         grid-template-columns: auto 1fr auto;
         padding: 15px 20px;
     }
-
+.overlay {
+  padding: 0px;
+  max-width: 1400px;
+  margin: auto;
+}
     .center-title {
         grid-column: 2;
         font-size: 24px;
