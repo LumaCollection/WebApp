@@ -114,3 +114,127 @@ h1 {
   text-decoration: underline;
   color: #111;
 }
+
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: auto 1fr auto;
+        padding: 15px 20px;
+    }
+
+    .menu-icon {
+        grid-column: 1;
+        justify-self: start;
+    }
+
+    .center-title {
+        grid-column: 2;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .search-bar {
+        display: none;
+    }
+    .right-links {
+        display: none;
+    }
+    .search-icon-mobile {
+        display: block;
+        grid-column: 3;
+        justify-self: end;
+    }
+
+    /* Body/HTML en móvil */
+    body, html {
+        /* Desactivamos el centrado vertical en móvil si hay scroll */
+        justify-content: flex-start;
+        padding-top: 80px; /* Espacio para el header fijo */
+        padding-bottom: 100px; /* Espacio para el footer fijo */
+    }
+
+    .main-content {
+        /* En móvil, ajustamos el padding-top para que no quede demasiado abajo */
+        padding-top: calc(70px + 3vh); /* Ajusta según sea necesario */
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .main-content h1 {
+        font-size: 2.5em;
+    }
+
+    .main-content p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+
+    .side-menu {
+        width: 80%;
+        left: -80%;
+        padding: 30px 20px;
+    }
+
+    .side-menu.open {
+        left: 0;
+        z-index: 1001;
+    }
+
+    .side-menu .menu-logo {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .side-menu .close-menu {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .side-menu .main-categories-tabs {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .side-menu .tab-item {
+        font-size: 16px;
+        padding: 5px 8px;
+        border-bottom: none;
+        flex-basis: auto;
+    }
+
+    .side-menu .tab-item.active {
+        border-bottom: none;
+        background-color: #eee;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .side-menu .submenu a {
+        font-size: 15px;
+    }
+
+    .side-menu .other-links-section {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    .side-menu .other-link {
+        font-size: 17px;
+    }
+
+    .site-footer {
+        padding-bottom: 15px;
+    }
+}
+
+.search-icon-mobile {
+    display: none;
+    padding: 8px;
+    cursor: pointer;
+}
