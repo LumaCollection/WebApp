@@ -28,25 +28,25 @@
 
   "chaquetas": [
     {
-      "name": "Sudadera Azul con Cremallera",
+      "name": "Chaqueta Azul con Cremallera",
       "color": "AZUL | 4893/133/344",
       "images": [
-        "imagenes/chaquetas/Sudadera3-1.webp",
-        "imagenes/chaquetas/Sudadera3-2.webp",
-        "imagenes/chaquetas/Sudadera3-3.webp"
+        "imagenes/chaquetas/sudadera3-1.webp",
+        "imagenes/chaquetas/sudadera3-2.webp",
+        "imagenes/chaquetas/sudadera3-3.webp"
       ],
       "price": "27,99 EUR",
       "description": "Sudadera unisex confeccionada en tejido con cáñamo. Cuello redondo con cierre frontal de botonadura. Manga larga.",
       "sizes": ["M", "L", "XL"]
     },
     {
-      "name": "Sudadera Marron con Cremallera",
+      "name": "Chaqueta Marron con Cremallera",
       "color": "MARRON | 4893/133/344",
       "images": [
-        "imagenes/chaquetas/Sudadera4-1.webp",
-        "imagenes/chaquetas/Sudadera4-2.webp",
-        "imagenes/chaquetas/Sudadera4-3.webp",
-        "imagenes/chaquetas/Sudadera4-4.webp"
+        "imagenes/chaquetas/sudadera4-1.webp",
+        "imagenes/chaquetas/sudadera4-2.webp",
+        "imagenes/chaquetas/sudadera4-3.webp",
+        "imagenes/chaquetas/sudadera4-4.webp"
       ],
       "price": "32,99 EUR",
       "description": "Sudadera unisex confeccionada en tejido con cáñamo. Cuello redondo con cierre frontal de botonadura. Manga larga.",
@@ -208,6 +208,60 @@
         "imagenes/bolsas/bolsa1-1.webp"
       ],
       "price": "9,99 EUR",
+      "sizes": ["Única"]
+    }
+  ],
+
+  "pegatinas": [
+    {
+      "name": "Pegatina Luma",
+      "images": [
+        "imagenes/pegatinas/Pegatina.webp"
+      ],
+      "price": "2,99 EUR",
+      "sizes": ["Única"]
+    },
+    {
+      "name": "Pegatina de Camiseta",
+      "images": [
+        "imagenes/pegatinas/pegatina2-1.webp"
+      ],
+      "price": "2,99 EUR",
+      "sizes": ["Única"]
+    }
+  ],
+
+  "pulseras": [
+    {
+      "name": "Pulsera de tela",
+      "images": [
+        "imagenes/pulseras/pulsera1.webp"
+      ],
+      "price": "4,99 EUR",
+      "sizes": ["Única"]
+    },
+    {
+      "name": "Pulsera de tela",
+      "images": [
+        "imagenes/pulseras/pulsera2.webp"
+      ],
+      "price": "4,99 EUR",
+      "sizes": ["Única"]
+    },
+    {
+      "name": "Pulsera de tela",
+      "images": [
+        "imagenes/pulseras/pulsera3.webp"
+      ],
+      "price": "4,99 EUR",
+      "sizes": ["Única"]
+    },
+    {
+      "name": "Pulsera de tela",
+      "images": [
+        "imagenes/pulseras/pulsera4.webp"
+      ],
+      "price": "4,99 EUR",
       "sizes": ["Única"]
     }
   ]
