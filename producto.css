@@ -115,7 +115,6 @@ h1 {
   color: #111;
 }
 
-
 @media (max-width: 768px) {
     header {
         grid-template-columns: auto 1fr auto;
@@ -233,8 +232,86 @@ h1 {
     }
 }
 
-.search-icon-mobile {
-    display: none;
-    padding: 8px;
-    cursor: pointer;
+/* --- PRODUCT-PAGE MOBILE -------------------------------------------------- */
+@media (max-width: 768px) {
+
+  /* 1. Ponemos todo en columna */
+  .product-page {
+    flex-direction: column;        /* de fila a columna          */
+    margin: 0 15px 60px;           /* reducimos márgenes laterales*/
+    gap: 40px;                     /* menos separación vertical   */
+  }
+
+  /* 2. Imagen principal: ancho completo y alto proporcional */
+  .left-side {
+    flex: 1 1 auto;                /* ocupa todo el ancho */
+    align-items: center;
+  }
+
+  .main-img {
+    width: 100%;
+    max-height: 60vh;              /* no más del 60 % del alto de pantalla */
+    object-fit: contain;
+  }
+
+  /* 3. Miniaturas en fila con scroll táctil */
+  .thumbnails {
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding-bottom: 5px;           /* pequeño “scroll overshoot” */
+  }
+
+  .thumbnails img {
+    width: 60px;
+    height: 75px;
+  }
+
+  /* 4. Lado derecho pasa a 100 % de ancho */
+  .right-side {
+    flex: 1 1 auto;
+    padding: 0 10px;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .price {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .color-code {
+    text-align: center;
+  }
+
+  /* 5. Tallas en cuadrícula compacta */
+  .sizes {
+    justify-content: center;
+    gap: 8px;
+  }
+  .sizes span {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* 6. Botón de añadir: ancho completo */
+  .add-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  /* 7. Descripción e información: texto ligeramente más pequeño */
+  .description {
+    font-size: 0.85rem;
+    text-align: justify;
+  }
+  .info-links a {
+    font-size: 0.8rem;
+  }
 }
+/* ------------------------------------------------------------------------- */
